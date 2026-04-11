@@ -5,46 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abhay Online Store</title>
     <style>
-        body { background-color: #f8f9fa; font-family: sans-serif; margin: 0; padding: 0; text-align: center; color: #333; }
-        header { background: #2c3e50; color: white; padding: 30px 20px; }
+        body { background-color: #f8f9fa; font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; text-align: center; color: #333; }
+        header { background: #2c3e50; color: white; padding: 30px 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        h1 { margin: 0; font-size: 28px; }
         .container { padding: 20px; display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
-        .product-card { background: white; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); width: 300px; overflow: hidden; }
+        .product-card { background: white; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); width: 300px; overflow: hidden; transition: 0.3s; border: 1px solid #ddd; }
+        .product-card:hover { transform: translateY(-5px); }
         .product-card img { width: 100%; height: 300px; object-fit: cover; }
         .details { padding: 20px; }
-        .price { color: #27ae60; font-size: 24px; font-weight: bold; margin-bottom: 15px; }
-        .btn-whatsapp { background: #25d366; color: white; padding: 12px; text-decoration: none; border-radius: 8px; display: block; font-weight: bold; }
+        .details h3 { margin: 10px 0; font-size: 20px; }
+        .price { color: #ff4757; font-size: 22px; font-weight: bold; margin-bottom: 15px; }
+        .btn { background: #25d366; color: white; padding: 12px 20px; text-decoration: none; border-radius: 50px; display: inline-block; font-weight: bold; transition: 0.3s; }
+        .btn:hover { background: #128c7e; }
+        .location { color: #777; font-size: 14px; margin-top: 10px; }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>Abhay Online Store</h1>
-    <p>प्रीमियम क्वालिटी टी-शर्ट्स | रोहिणा, गुजरात</p>
-</header>
+    <header>
+        <h1>Abhay Online Store</h1>
+        <p>कोडिंग और नई टेक्नोलॉजी सीखने का जुनून</p>
+    </header>
 
-<div class="container">
-    <div class="product-card">
-        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500" alt="Black T-Shirt">
-        <div class="details">
-            <h3>Classic Black T-Shirt</h3>
-            <p class="price">₹349</p>
-            <a href="https://wa.me/918999087311?text=नमस्ते अभय, मुझे ब्लैक शर्ट चाहिए" class="btn-whatsapp">WhatsApp पर ऑर्डर दें</a>
+    <div class="container">
+        <div class="product-card">
+            <img src="tshirt.jpg" alt="Custom T-Shirt">
+            <div class="details">
+                <h3>Custom Printed T-Shirt</h3>
+                <div class="price">₹499</div>
+                <a href="https://wa.me/918999087311?text=नमस्ते अभय, मुझे यह टी-शर्ट खरीदनी है।" class="btn">WhatsApp पर ऑर्डर करें</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="bottle.jpg" alt="Printed Bottle">
+            <div class="details">
+                <h3>Personalized Bottle</h3>
+                <div class="price">₹299</div>
+                <a href="https://wa.me/918999087311?text=नमस्ते अभय, मुझे यह प्रिंटेड बोतल पसंद है।" class="btn">WhatsApp पर ऑर्डर करें</a>
+            </div>
         </div>
     </div>
 
-    <div class="product-card">
-        <img src="https://images.unsplash.com/photo-1581655353564-df123a1eb820?w=500" alt="White T-Shirt">
-        <div class="details">
-            <h3>Premium White T-Shirt</h3>
-            <p class="price">₹349</p>
-            <a href="https://wa.me/918999087311?text=नमस्ते अभय, मुझे व्हाइट शर्ट चाहिए" class="btn-whatsapp">WhatsApp पर ऑर्डर दें</a>
-        </div>
-    </div>
-</div>
-
-<footer>
-    <p>© 2026 Abhay Store - रोहिणा, वलसाड</p>
-</footer>
+    <p class="location">📍 रोहिणा, गुजरात</p>
 
 </body>
 </html>
