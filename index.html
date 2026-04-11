@@ -5,58 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abhay Online Store</title>
     <style>
-        body { background-color: #f8f9fa; font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; text-align: center; color: #333; }
-        header { background: #2c3e50; color: white; padding: 30px 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        h1 { margin: 0; font-size: 28px; }
-        .container { padding: 20px; display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
-        .product-card { background: white; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); width: 300px; overflow: hidden; transition: 0.3s; border: 1px solid #ddd; }
-        .product-card:hover { transform: translateY(-5px); }
-        .product-card img { width: 100%; height: 300px; object-fit: cover; }
+        /* सुंदर डिजाइन के लिए स्टाइल */
+        body { background-color: #f0f2f5; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; text-align: center; color: #333; }
+        header { background: linear-gradient(135deg, #1e3c72, #2a5298); color: white; padding: 50px 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.2); border-bottom-left-radius: 30px; border-bottom-right-radius: 30px; }
+        h1 { margin: 0; font-size: 32px; letter-spacing: 1px; }
+        .tagline { font-size: 16px; opacity: 0.9; margin-top: 10px; }
+        
+        .container { padding: 30px 15px; display: flex; flex-wrap: wrap; justify-content: center; gap: 25px; }
+        
+        .product-card { background: white; border-radius: 20px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); width: 320px; overflow: hidden; transition: 0.4s; border: 1px solid #eee; }
+        .product-card:hover { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(0,0,0,0.2); }
+        .product-card img { width: 100%; height: 350px; object-fit: cover; }
+        
         .details { padding: 20px; }
-        .details h3 { margin: 10px 0; font-size: 20px; }
-        .price { color: #ff4757; font-size: 22px; font-weight: bold; margin-bottom: 15px; }
-        .btn { background: #25d366; color: white; padding: 12px 20px; text-decoration: none; border-radius: 50px; display: inline-block; font-weight: bold; transition: 0.3s; }
-        .btn:hover { background: #128c7e; }
-        .location { color: #777; font-size: 14px; margin-top: 10px; }
+        .details h3 { margin: 10px 0; font-size: 22px; color: #2c3e50; }
+        .price { color: #e74c3c; font-size: 24px; font-weight: bold; margin-bottom: 20px; }
+        
+        .btn { background: #25d366; color: white; padding: 15px 25px; text-decoration: none; border-radius: 50px; display: inline-block; font-weight: bold; font-size: 16px; transition: 0.3s; box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3); }
+        .btn:hover { background: #128c7e; transform: scale(1.05); }
+        
+        .footer { color: #888; font-size: 14px; margin: 40px 0; padding-bottom: 20px; }
     </style>
 </head>
 <body>
 
     <header>
         <h1>Abhay Online Store</h1>
-        <p>कोडिंग और नई टेक्नोलॉजी सीखने का जुनून</p>
+        <p class="tagline">बेहतरीन क्वालिटी और शानदार प्रिंटिंग</p>
     </header>
 
     <div class="container">
         <div class="product-card">
-            <img src="tshirt.jpg" alt="Custom T-Shirt">
-           <div class="details">
-            <h3>Custom Printed T-Shirt</h3>
-            <div class="price">₹499</div>
-            <a href="https://wa.me/918999087311?text=नमस्ते अभय, मुझे यह टी-शर्ट खरीदनी है।" class="btn">WhatsApp पर ऑर्डर करें</a>
-        </div>
-    </div>
-
-    <div class="product-card">
-        <img src="bottle.jpg" alt="Personalized Bottle">
-        <div class="details">
-            <h3>Personalized Bottle</h3>
-            <div class="price">₹299</div>
-            <a href="https://wa.me/918999087311?text=नमस्ते अभय, मुझे यह प्रिंटेड बोतल पसंद है।" class="btn">WhatsApp पर ऑर्डर करें</a>
-        </div>
+            <img src="Screenshot 2026-04-11 9.18.42 AM.png" alt="Custom Printed T-Shirt">
+            <div class="details">
+                <h3>Custom Printed T-Shirt</h3>
+                <div class="price">₹499</div>
+                <a href="https://wa.me/918999087311?text=नमस्ते अभय, मुझे यह टी-शर्ट पसंद है, क्या यह मिल सकती है?" class="btn">WhatsApp पर ऑर्डर करें</a>
+            </div>
         </div>
 
         <div class="product-card">
-            <img src="bottle.jpg" alt="Printed Bottle">
+            <img src="Screenshot 2026-04-11 9.19.08 AM.png" alt="Premium Printing">
             <div class="details">
-                <h3>Personalized Bottle</h3>
+                <h3>Premium Printed Item</h3>
                 <div class="price">₹299</div>
-                <a href="https://wa.me/918999087311"text=नमस्ते अभय, मुझे यह प्रिंटेड बोतल पसंद है।" class="btn">WhatsApp पर ऑर्डर करें</a>
+                <a href="https://wa.me/918999087311?text=नमस्ते अभय, मुझे इस प्रॉडक्ट के बारे में जानना है।" class="btn">WhatsApp पर ऑर्डर करें</a>
             </div>
         </div>
     </div>
 
-    <p class="location">📍 रोहिणा, गुजरात</p>
+    <div class="footer">
+        <p>📍 रोहिणा, गुजरात | अभय द्वारा संचालित</p>
+    </div>
 
 </body>
 </html>
